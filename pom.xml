@@ -14,7 +14,7 @@
 	<name>pc-user-auth</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -47,12 +47,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				 <version>3.0</version>
-				 <configuration>
-       					 <source>1.7</source>
-      					  <target>1.7</target>
-   				 </configuration>
-			</plugin>
 		</plugins>
 	</build>
 
