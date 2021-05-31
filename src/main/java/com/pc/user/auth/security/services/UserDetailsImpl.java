@@ -17,30 +17,27 @@ public class UserDetailsImpl implements UserDetails{
 
 	private static final long serialVersionUID = 1L;
 	
-	
 	private String id;
 	
 	private String firstName;
 	
 	private String lastName;
+
+	private String mobileNumber;
 	
 	private String email;
 	 
-	private String mobileNumber;
-	
 	@JsonIgnore
 	private String password;
 	
-	
-
-	public UserDetailsImpl(String id, String firstName, String lastName, String email, String mobileNumber,
+	public UserDetailsImpl(String id, String firstName, String lastName, String mobileNumber,String email,
 			String password) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.email = email;
 		this.mobileNumber = mobileNumber;
+		this.email = email;
 		this.password = password;
 	}
 
@@ -49,8 +46,8 @@ public class UserDetailsImpl implements UserDetails{
 				user.getId(), 
 				user.getFirstName(),
 				user.getLastName(),
-				user.getEmail(),
 				user.getMobileNumber(),
+				user.getEmail(),
 				user.getPassword()
 				);
 	}

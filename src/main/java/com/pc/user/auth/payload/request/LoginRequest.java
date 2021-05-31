@@ -3,8 +3,6 @@ package com.pc.user.auth.payload.request;
 import javax.validation.constraints.NotBlank;
 
 public class LoginRequest {
-
-	
 	@NotBlank
 	private String email;
 	
